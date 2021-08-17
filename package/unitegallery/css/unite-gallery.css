@@ -35,7 +35,7 @@
 }
 
 .ug-gallery-wrapper{
-	overflow:hidden;
+	overflow:visible;
 	position:relative;
 	font-family:Arial, Helvetica, sans-serif;
 }
@@ -321,7 +321,7 @@
 .ug-gallery-wrapper .ug-thumbs-strip,
 .ug-gallery-wrapper .ug-thumbs-grid{
 	position:absolute;
-	overflow:hidden;
+	overflow:visible;
 	
 	-webkit-user-select: none;	/* make unselectable */         
 	-moz-user-select: none; 

@@ -210,9 +210,18 @@ function UGTheme_video(){
 			
 		html += "<div class='ug-thumb-title'>" + objItem.title + "</div>";
 		
-		if(showDesc == true)
-			html += "<div class='ug-thumb-desc'>" + objItem.description + "</div>";
-		
+		if(showDesc == true) {
+			var shortDescription = objItem.description.split(" ").splice(0,7).join(" ").concat("... ");
+			var randomId = Math.floor(Math.random() * 1000);
+
+			html += "<div class='ug-thumb-desc'>" + shortDescription + "</div>";
+			html += "<div class='popup' onclick='var popup = document.getElementById(\"myPopup" + randomId + "\");" +
+												"popup.classList.toggle(\"show\");'>+ Mehr" +
+						"<span class='popuptext' id='myPopup" + randomId +"'>" + objItem.description + "</span>" +
+					"</div>";
+		}
+
+
 		if(showIcon == true)
 			html += "</div>";	//thumb right end
 		

@@ -1,6 +1,40 @@
 @CHARSET "ISO-8859-1";
 
+/* ----- Customized CSS ------- */
 
+/* Popup container - can be anything you want */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+	border-bottom: 1px dotted #dddddd;
+	color: #dddddd;
+	font-size: 11px;
+	line-height: normal;
+}
+
+/* The actual popup */
+.popup .popuptext {
+	visibility: hidden;
+	width: 360px;
+	background-color: #555;
+	color: #fff;
+	border-radius: 6px;
+	padding: 8px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -30px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+	visibility: visible;
+}
+
+/* ----- END Customized CSS ------- */
 
 /* ----- Strip Panel ------- */
 
